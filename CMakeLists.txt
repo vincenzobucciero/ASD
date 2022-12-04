@@ -9,4 +9,4 @@ include_directories(HelloWorld)
 include_directories(ExOverloading)
 
 add_executable(ASD
-        ExAlias/Alias.cpp)
+         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h Indovinello/Test.cpp)
