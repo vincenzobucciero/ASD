@@ -4,7 +4,9 @@ project(ASD)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
+include_directories(cmake-build-debug)
 include_directories(HelloWorld)
+include_directories(ExOverloading)
 
 add_executable(ASD
-        HelloWorld/HelloWorld.cpp)
+        ExAlias/Alias.cpp)
