@@ -9,4 +9,5 @@ include_directories(HelloWorld)
 include_directories(ExOverloading)
 
 add_executable(ASD
-         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h Indovinello/Test.cpp)
+        Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
+        ExString/StringExample.cpp)
