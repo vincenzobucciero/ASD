@@ -14,6 +14,7 @@
 using namespace std;
 
 int main () {
+
     Indovinello indovinello;
 
     indovinello.risolvi();
