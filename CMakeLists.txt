@@ -7,7 +7,11 @@ include_directories(.)
 include_directories(cmake-build-debug)
 include_directories(HelloWorld)
 include_directories(ExOverloading)
+include_directories(IOstring)
+include_directories(Indovinello)
+include_directories(ExAlias)
+include_directories(ExString)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
-        ExString/StringExample.cpp)
+        IOstring/iosbegFile.cpp)
