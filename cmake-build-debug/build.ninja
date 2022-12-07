@@ -49,12 +49,19 @@ cmake_ninja_workdir = /home/vincenzo/Scrivania/ASD/cmake-build-debug/
 
 build cmake_object_order_depends_target_ASD: phony || CMakeFiles/ASD.dir
 
-build CMakeFiles/ASD.dir/IOstring/iosbegFile.cpp.o: CXX_COMPILER__ASD_Debug /home/vincenzo/Scrivania/ASD/IOstring/iosbegFile.cpp || cmake_object_order_depends_target_ASD
-  DEP_FILE = CMakeFiles/ASD.dir/IOstring/iosbegFile.cpp.o.d
+build CMakeFiles/ASD.dir/IOstring/getLine.cpp.o: CXX_COMPILER__ASD_Debug /home/vincenzo/Scrivania/ASD/IOstring/getLine.cpp || cmake_object_order_depends_target_ASD
+  DEP_FILE = CMakeFiles/ASD.dir/IOstring/getLine.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   INCLUDES = -I/home/vincenzo/Scrivania/ASD/. -I/home/vincenzo/Scrivania/ASD/cmake-build-debug -I/home/vincenzo/Scrivania/ASD/HelloWorld -I/home/vincenzo/Scrivania/ASD/ExOverloading -I/home/vincenzo/Scrivania/ASD/IOstring -I/home/vincenzo/Scrivania/ASD/Indovinello -I/home/vincenzo/Scrivania/ASD/ExAlias -I/home/vincenzo/Scrivania/ASD/ExString
   OBJECT_DIR = CMakeFiles/ASD.dir
   OBJECT_FILE_DIR = CMakeFiles/ASD.dir/IOstring
+
+build CMakeFiles/ASD.dir/RispettaiVersi/Gioco.cpp.o: CXX_COMPILER__ASD_Debug /home/vincenzo/Scrivania/ASD/RispettaiVersi/Gioco.cpp || cmake_object_order_depends_target_ASD
+  DEP_FILE = CMakeFiles/ASD.dir/RispettaiVersi/Gioco.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/vincenzo/Scrivania/ASD/. -I/home/vincenzo/Scrivania/ASD/cmake-build-debug -I/home/vincenzo/Scrivania/ASD/HelloWorld -I/home/vincenzo/Scrivania/ASD/ExOverloading -I/home/vincenzo/Scrivania/ASD/IOstring -I/home/vincenzo/Scrivania/ASD/Indovinello -I/home/vincenzo/Scrivania/ASD/ExAlias -I/home/vincenzo/Scrivania/ASD/ExString
+  OBJECT_DIR = CMakeFiles/ASD.dir
+  OBJECT_FILE_DIR = CMakeFiles/ASD.dir/RispettaiVersi
 
 
 # =============================================================================
@@ -64,7 +71,7 @@ build CMakeFiles/ASD.dir/IOstring/iosbegFile.cpp.o: CXX_COMPILER__ASD_Debug /hom
 #############################################
 # Link the executable ASD
 
-build ASD: CXX_EXECUTABLE_LINKER__ASD_Debug CMakeFiles/ASD.dir/IOstring/iosbegFile.cpp.o
+build ASD: CXX_EXECUTABLE_LINKER__ASD_Debug CMakeFiles/ASD.dir/IOstring/getLine.cpp.o CMakeFiles/ASD.dir/RispettaiVersi/Gioco.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/ASD.dir
   POST_BUILD = :
