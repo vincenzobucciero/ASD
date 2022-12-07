@@ -11,7 +11,13 @@ include_directories(IOstring)
 include_directories(Indovinello)
 include_directories(ExAlias)
 include_directories(ExString)
+include_directories(RispettaiVersi)
+include_directories(Polimorfismo)
+include_directories(OverloadOperator)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
-        IOstring/getLine.cpp RispettaiVersi/Gioco.cpp RispettaiVersi/Checker.h)
+        RispettaiVersi/Checker.h
+        Polimorfismo/Polymorf.h
+        Polimorfismo/Persona.h
+        OverloadOperator/Operator+.cpp OverloadOperator/Operator+.h)
