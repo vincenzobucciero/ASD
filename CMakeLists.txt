@@ -14,4 +14,4 @@ include_directories(ExString)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
-        IOstring/iosbegFile.cpp)
+        IOstring/getLine.cpp RispettaiVersi/Gioco.cpp RispettaiVersi/Checker.h)
