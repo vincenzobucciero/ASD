@@ -20,4 +20,5 @@ add_executable(ASD
         RispettaiVersi/Checker.h
         Polimorfismo/Polymorf.h
         Polimorfismo/Persona.h
-        OverloadOperator/Operator+.cpp OverloadOperator/Operator+.h)
+        OverloadOperator/Operator+.h
+        LinkedList/Node.h LinkedList/LinkedList.h LinkedList/Impiegato.h LinkedList/Manager.h LinkedList/Azienda.cpp)
