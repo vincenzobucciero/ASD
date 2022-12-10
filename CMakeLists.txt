@@ -14,6 +14,7 @@ include_directories(ExString)
 include_directories(RispettaiVersi)
 include_directories(Polimorfismo)
 include_directories(OverloadOperator)
+include_directories(LinkedList)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
@@ -21,4 +22,6 @@ add_executable(ASD
         Polimorfismo/Polymorf.h
         Polimorfismo/Persona.h
         OverloadOperator/Operator+.h
-        LinkedList/Node.h LinkedList/LinkedList.h LinkedList/Impiegato.h LinkedList/Manager.h LinkedList/Azienda.cpp)
+        LinkedList/Node.h LinkedList/LinkedList.h LinkedList/Impiegato.h LinkedList/Manager.h
+        Template/Stack.h
+        BlockChain/BlockChain.cpp BlockChain/Transazione.h BlockChain/Node.h BlockChain/LinkedList.h BlockChain/Block.h)
