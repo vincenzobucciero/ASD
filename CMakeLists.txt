@@ -15,6 +15,8 @@ include_directories(RispettaiVersi)
 include_directories(Polimorfismo)
 include_directories(OverloadOperator)
 include_directories(LinkedList)
+include_directories(Template)
+include_directories(BlockChain)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
