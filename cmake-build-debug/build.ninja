@@ -49,12 +49,12 @@ cmake_ninja_workdir = /home/vincenzo/Scrivania/ASD/cmake-build-debug/
 
 build cmake_object_order_depends_target_ASD: phony || CMakeFiles/ASD.dir
 
-build CMakeFiles/ASD.dir/LinkedList/Azienda.cpp.o: CXX_COMPILER__ASD_Debug /home/vincenzo/Scrivania/ASD/LinkedList/Azienda.cpp || cmake_object_order_depends_target_ASD
-  DEP_FILE = CMakeFiles/ASD.dir/LinkedList/Azienda.cpp.o.d
+build CMakeFiles/ASD.dir/BlockChain/BlockChain.cpp.o: CXX_COMPILER__ASD_Debug /home/vincenzo/Scrivania/ASD/BlockChain/BlockChain.cpp || cmake_object_order_depends_target_ASD
+  DEP_FILE = CMakeFiles/ASD.dir/BlockChain/BlockChain.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
-  INCLUDES = -I/home/vincenzo/Scrivania/ASD/. -I/home/vincenzo/Scrivania/ASD/cmake-build-debug -I/home/vincenzo/Scrivania/ASD/HelloWorld -I/home/vincenzo/Scrivania/ASD/ExOverloading -I/home/vincenzo/Scrivania/ASD/IOstring -I/home/vincenzo/Scrivania/ASD/Indovinello -I/home/vincenzo/Scrivania/ASD/ExAlias -I/home/vincenzo/Scrivania/ASD/ExString -I/home/vincenzo/Scrivania/ASD/RispettaiVersi -I/home/vincenzo/Scrivania/ASD/Polimorfismo -I/home/vincenzo/Scrivania/ASD/OverloadOperator
+  INCLUDES = -I/home/vincenzo/Scrivania/ASD/. -I/home/vincenzo/Scrivania/ASD/cmake-build-debug -I/home/vincenzo/Scrivania/ASD/HelloWorld -I/home/vincenzo/Scrivania/ASD/ExOverloading -I/home/vincenzo/Scrivania/ASD/IOstring -I/home/vincenzo/Scrivania/ASD/Indovinello -I/home/vincenzo/Scrivania/ASD/ExAlias -I/home/vincenzo/Scrivania/ASD/ExString -I/home/vincenzo/Scrivania/ASD/RispettaiVersi -I/home/vincenzo/Scrivania/ASD/Polimorfismo -I/home/vincenzo/Scrivania/ASD/OverloadOperator -I/home/vincenzo/Scrivania/ASD/LinkedList
   OBJECT_DIR = CMakeFiles/ASD.dir
-  OBJECT_FILE_DIR = CMakeFiles/ASD.dir/LinkedList
+  OBJECT_FILE_DIR = CMakeFiles/ASD.dir/BlockChain
 
 
 # =============================================================================
@@ -64,7 +64,7 @@ build CMakeFiles/ASD.dir/LinkedList/Azienda.cpp.o: CXX_COMPILER__ASD_Debug /home
 #############################################
 # Link the executable ASD
 
-build ASD: CXX_EXECUTABLE_LINKER__ASD_Debug CMakeFiles/ASD.dir/LinkedList/Azienda.cpp.o
+build ASD: CXX_EXECUTABLE_LINKER__ASD_Debug CMakeFiles/ASD.dir/BlockChain/BlockChain.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/ASD.dir
   POST_BUILD = :
