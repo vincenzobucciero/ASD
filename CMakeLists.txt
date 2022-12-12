@@ -18,6 +18,9 @@ include_directories(LinkedList)
 include_directories(Template)
 include_directories(BlockChain)
 include_directories(ExVector)
+include_directories(ExIterator)
+include_directories(ExList)
+include_directories(ExMap)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
@@ -28,4 +31,7 @@ add_executable(ASD
         LinkedList/Node.h LinkedList/LinkedList.h LinkedList/Impiegato.h LinkedList/Manager.h
         Template/Stack.h
         BlockChain/Transazione.h BlockChain/Node.h BlockChain/LinkedList.h BlockChain/Block.h
-        ExVector/Vector.cpp ExIterator/Iterator.cpp ExList/List.cpp ExMap/Map.cpp)
+        ExVector/Vector.cpp
+        ExIterator/Iterator.cpp
+        ExList/List.cpp
+        ExMap/Map.cpp)
