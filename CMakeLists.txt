@@ -17,6 +17,7 @@ include_directories(OverloadOperator)
 include_directories(LinkedList)
 include_directories(Template)
 include_directories(BlockChain)
+include_directories(ExVector)
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
@@ -26,4 +27,5 @@ add_executable(ASD
         OverloadOperator/Operator+.h
         LinkedList/Node.h LinkedList/LinkedList.h LinkedList/Impiegato.h LinkedList/Manager.h
         Template/Stack.h
-        BlockChain/BlockChain.cpp BlockChain/Transazione.h BlockChain/Node.h BlockChain/LinkedList.h BlockChain/Block.h)
+        BlockChain/Transazione.h BlockChain/Node.h BlockChain/LinkedList.h BlockChain/Block.h
+        ExVector/Vector.cpp ExIterator/Iterator.cpp ExList/List.cpp ExMap/Map.cpp)
