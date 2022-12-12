@@ -34,4 +34,4 @@ add_executable(ASD
         ExVector/Vector.cpp
         ExIterator/Iterator.cpp
         ExList/List.cpp
-        ExMap/Map.cpp)
+        ExMap/Map.cpp Thread/Thread.cpp)
