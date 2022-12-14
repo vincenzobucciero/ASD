@@ -34,4 +34,5 @@ add_executable(ASD
         ExVector/Vector.cpp
         ExIterator/Iterator.cpp
         ExList/List.cpp
-        ExMap/Map.cpp Thread/Thread.cpp)
+        ExMap/Map.cpp
+        GiocoDel15/Gioco.cpp GiocoDel15/Checker.h GiocoDel15/fileOne.txt GiocoDel15/fileTwo.txt)
