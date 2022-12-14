@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 25,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
@@ -135,6 +135,18 @@
 				"file" : 0,
 				"line" : 23,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
 			}
 		]
 	},
@@ -223,6 +235,14 @@
 				{
 					"backtrace" : 19,
 					"path" : "/home/vincenzo/Scrivania/ASD/ExMap"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/home/vincenzo/Scrivania/ASD/GiocoDel15"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/vincenzo/Scrivania/ASD/WordCount"
 				}
 			],
 			"language" : "CXX",
@@ -240,7 +260,7 @@
 				17,
 				18,
 				19,
-				20
+				24
 			]
 		}
 	],
@@ -289,7 +309,8 @@
 				13,
 				14,
 				15,
-				21
+				20,
+				23
 			]
 		},
 		{
@@ -300,15 +321,15 @@
 				17,
 				18,
 				19,
-				20
+				24
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				22,
-				23
+				21,
+				22
 			]
 		}
 	],
@@ -420,12 +441,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "GiocoDel15/Gioco.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "GiocoDel15/Checker.h",
 			"sourceGroupIndex" : 0
 		},
@@ -438,6 +453,17 @@
 			"backtrace" : 1,
 			"path" : "GiocoDel15/fileTwo.txt",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "WordCount/CheckerOccorrenze.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "WordCount/main.cpp",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
