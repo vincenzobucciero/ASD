@@ -11,8 +11,8 @@ using namespace std;
 
 int main () {
     //OFSTREAM crea un riferimento ad un file su cui scrivere
-    //stiamo dichiarando "file1.txt" un oggetto della classe ofstream
-    ofstream filewrite("file1.txt");    //il parametro viene passato al costruttore
+    //stiamo dichiarando "fileOne.txt.txt" un oggetto della classe ofstream
+    ofstream filewrite("fileOne.txt.txt");    //il parametro viene passato al costruttore
 
     //all'apertura del file, il puntatore memorizza la posizione corrente all'interno di un file
     //all'apertura è all'inizio del file

@@ -12,7 +12,7 @@ int main () {
     string str;
     fstream ioFile;
 
-    ioFile.open("file1.txt", ios::in | ios::out);
+    ioFile.open("fileOne.txt.txt", ios::in | ios::out);
     ioFile << "Ciao Mondo Grande!!";
     //posizione iniziale del file -> ioFile.seekg(ios::beg)
     ioFile.seekg(5);        //puntatore 5 posizioni avanti

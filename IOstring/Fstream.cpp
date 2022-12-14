@@ -9,7 +9,7 @@
 using namespace std;
 
 int main () {
-    string filename = "file1.txt";
+    string filename = "fileOne.txt.txt";
     string out = "nuovo";
     //la classe fstream viene usata quando non si sa se accedere al file in lettura o in scrittura (viene specificato dopo)
     //fstream è un riferimento generico ad un file e che ne deve essere specificata l'apertura

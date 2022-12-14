@@ -12,7 +12,7 @@ int main () {
     char line[80];
     fstream ioFile;
 
-    ioFile.open("file1.txt", ios::in | ios::out);
+    ioFile.open("fileOne.txt.txt", ios::in | ios::out);
     //controllo se l'apertura del file è avvenuta con successo
     if(ioFile.fail())
         cout<< "Il file non è stato aperto con successo " <<endl;
