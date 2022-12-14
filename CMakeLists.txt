@@ -23,6 +23,8 @@ include_directories(ExList)
 include_directories(ExMap)
 include_directories(GiocoDel15)
 include_directories(WordCount)
+include_directories(BubbleSort)
+
 
 add_executable(ASD
         Indovinello/Contenitore.h Indovinello/Anfora.h Indovinello/Indovinello.h
@@ -37,4 +39,6 @@ add_executable(ASD
         ExIterator/Iterator.cpp
         ExList/List.cpp
         ExMap/Map.cpp
-        GiocoDel15/Checker.h GiocoDel15/fileOne.txt GiocoDel15/fileTwo.txt WordCount/CheckerOccorrenze.h WordCount/main.cpp)
+        GiocoDel15/Checker.h GiocoDel15/fileOne.txt GiocoDel15/fileTwo.txt
+        WordCount/CheckerOccorrenze.h
+        BubbleSort/Bubble.h BubbleSort/main.cpp)

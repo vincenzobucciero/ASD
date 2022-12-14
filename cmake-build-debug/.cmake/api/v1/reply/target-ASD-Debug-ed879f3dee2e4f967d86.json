@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -147,6 +147,12 @@
 				"file" : 0,
 				"line" : 25,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
 			}
 		]
 	},
@@ -243,6 +249,10 @@
 				{
 					"backtrace" : 21,
 					"path" : "/home/vincenzo/Scrivania/ASD/WordCount"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/vincenzo/Scrivania/ASD/BubbleSort"
 				}
 			],
 			"language" : "CXX",
@@ -260,7 +270,7 @@
 				17,
 				18,
 				19,
-				24
+				25
 			]
 		}
 	],
@@ -310,7 +320,8 @@
 				14,
 				15,
 				20,
-				23
+				23,
+				24
 			]
 		},
 		{
@@ -321,7 +332,7 @@
 				17,
 				18,
 				19,
-				24
+				25
 			]
 		},
 		{
@@ -461,8 +472,13 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "BubbleSort/Bubble.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "WordCount/main.cpp",
+			"path" : "BubbleSort/main.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],
