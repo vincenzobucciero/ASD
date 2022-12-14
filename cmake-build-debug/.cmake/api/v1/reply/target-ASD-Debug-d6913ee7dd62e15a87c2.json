@@ -288,7 +288,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				21
 			]
 		},
 		{
@@ -300,6 +301,14 @@
 				18,
 				19,
 				20
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				22,
+				23
 			]
 		}
 	],
@@ -412,8 +421,23 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Thread/Thread.cpp",
+			"path" : "GiocoDel15/Gioco.cpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "GiocoDel15/Checker.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "GiocoDel15/fileOne.txt",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "GiocoDel15/fileTwo.txt",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"
