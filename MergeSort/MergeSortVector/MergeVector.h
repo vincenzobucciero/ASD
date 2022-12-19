@@ -2,73 +2,85 @@
 // Created by vincenzo on 19/12/22.
 //
 
-#ifndef ASD_MERGEVECTOR_H
-#define ASD_MERGEVECTOR_H
-
-#include <iostream>
+#ifndef ALGORITMI_H
+#define ALGORITMI_H
 #include <vector>
 
 using namespace std;
+template<class Item>
 
-//Riscrivere il Merge Sort utilizzando il contenitore Vector ed un iteratore
-
-template <typename T>
-class MergeVector {
+class Algoritmi
+{
 private:
-    static void merge(typename vector<T>::iterator begin, typename vector<T>::iterator med, typename vector<T>::iterator end);
+    static void merge(typename vector<Item>::iterator, typename vector<Item>::iterator, typename vector<Item>::iterator);
 public:
-    static void MergeSortVector(typename  vector<T>::iterator begin, typename vector<T>::iterator end);
+    static void mergeSort(typename vector<Item>::iterator, typename vector<Item>::iterator );
 };
 
 
-template <typename T>
-void MergeVector<T>::merge(typename vector<T>::iterator begin, typename vector<T>::iterator med, typename vector<T>::iterator end) {
-    //n indica la distanza tra left e right, cioe il size del vector
-    auto n = end-begin;
+template<class Item> void Algoritmi<Item>::merge(typename vector<Item>::iterator begin, typename vector<Item>::iterator mid, typename vector<Item>::iterator end){
 
-    auto indice = (int) (n/2)-1;
+    auto size = end - begin;
+    typename vector<Item>::iterator i;
+    typename vector<Item>::iterator j;
+    typename vector<Item>::iterator k;
+    vector<Item> aux(size);
 
-    vector<T> aux(n);
-    typename vector<T>::iterator i;
-    typename vector<T>::iterator j;
-    typename vector<T>::iterator k;
+    //utilizzo center come indice di dell'array ausiliare poiché gli iteratori punteranno all'elemento stesso
+    //non alla posizione
+    //size/2 - 1 perché in caso di numeri di dispari si approssima per difetto
+    int center = (size/2) -1 ;
 
-    for (i = med-1; i != begin-1; i--)
-        aux.at(indice--) = *i;
+    for(i = mid-1; i != begin-1; i--)
+    {
+        aux.at(center) = *i;
+        center--;
+    }
 
-    indice = n;
+    //center è giunto alla fine, poiché la seconda parte dell'array deve essere riempita al contraio lo riporto alla fine
+    center = size;
+    for(j = mid; j != end; j++)
+    {
+        aux.at(center-1) = *j;
+        center--;
+    }
 
-    for (j = med; j != end; j++)
-        aux.at(indice--) = *j;
-
-    // a differenza del classico merge qui prima di andare a fare la fusione dei vector ordinati
-    // prima ho bisogno di far puntare i rispettivi iteratori al posto giusto, quindi:
-    // i punta al primo elemento del vector e j all'ultimo elemento
+    //riposoziono gli indici
+    //i all'inzio dell'array creato e j alla fine
     i = aux.begin();
     j = aux.end() - 1;
 
-    for ( k = begin; k != end; k++ )
-        if ( *j < *i )
-            *k = *j--;
+    for(k = begin; k != end; k++){
+        if(*j < *i)
+        {
+            *k = *j;
+            j--;
+        }
         else
-            *k = *i++;
+        {
+            *k = *i;
+            i++;
+        }
+    }
+
 }
 
-template<typename T>
-void MergeVector<T>::MergeSortVector(typename vector<T>::iterator begin, typename vector<T>::iterator end) {
+
+template<class Item> void Algoritmi<Item> :: mergeSort(typename vector<Item>::iterator begin, typename vector<Item>::iterator end)
+{
     //non posso passare come parametro l'array intero perché non si aggiorna
     //si preferisce dunque lavorare unicamente con gli iteratori
     auto size = end-begin;
 
     if(size >= 2)
     {
-        auto med = begin;
-        advance(med,size/2);
+        auto mid = begin;
+        advance(mid,size/2);
 
-        MergeSortVector(begin, end);
-        MergeSortVector(med, end);
-        merge(begin, med, end);
+        mergeSort(begin, mid);
+        mergeSort(mid, end);
+        merge(begin,mid,end);
     }
 }
 
-#endif //ASD_MERGEVECTOR_H
+#endif
