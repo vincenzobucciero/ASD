@@ -24,6 +24,9 @@ include_directories(ExMap)
 include_directories(GiocoDel15)
 include_directories(WordCount)
 include_directories(BubbleSort)
+include_directories(AziendaInBorsa)
+include_directories(MergeSort)
+include_directories(MergeSort/MergeSortVector)
 
 
 add_executable(ASD
@@ -41,4 +44,9 @@ add_executable(ASD
         ExMap/Map.cpp
         GiocoDel15/Checker.h GiocoDel15/fileOne.txt GiocoDel15/fileTwo.txt
         WordCount/CheckerOccorrenze.h
-        BubbleSort/Bubble.h BubbleSort/main.cpp)
+        BubbleSort/Bubble.h
+        BubbleSort/BubbleVect.h
+        InsertionSort/InsertionSort.h
+        InsertionSort/InsertionSortVector.h
+        MergeSort/MergeSort.h
+        MergeSort/MergeSortVector/MergeVector.h MergeSort/MergeSortVector/TestMergeVector.cpp)
