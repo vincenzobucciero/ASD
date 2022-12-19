@@ -49,4 +49,5 @@ add_executable(ASD
         InsertionSort/InsertionSort.h
         InsertionSort/InsertionSortVector.h
         MergeSort/MergeSort.h
-        MergeSort/MergeSortVector/MergeVector.h MergeSort/MergeSortVector/TestMergeVector.cpp)
+        MergeSort/MergeSortVector/MergeVector.h
+        MergeSort/MergeSortRecursive/MergeRecursive.h MergeSort/MergeSortRecursive/TestRecursive.cpp)
