@@ -27,6 +27,7 @@ include_directories(BubbleSort)
 include_directories(AziendaInBorsa)
 include_directories(MergeSort)
 include_directories(MergeSort/MergeSortVector)
+include_directories(QuickSort)
 
 
 add_executable(ASD
@@ -50,4 +51,5 @@ add_executable(ASD
         InsertionSort/InsertionSortVector.h
         MergeSort/MergeSort.h
         MergeSort/MergeSortVector/MergeVector.h
-        MergeSort/MergeSortRecursive/MergeRecursive.h MergeSort/MergeSortRecursive/TestRecursive.cpp)
+        MergeSort/MergeSortRecursive/MergeRecursive.h
+        QuickSort/QuickSortPivot/QuickSort.h QuickSort/QuickSortPivot/TestQuickSort.cpp)
