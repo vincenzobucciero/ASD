@@ -23,6 +23,7 @@ public:
     }
     void push(T elem);
     bool pop(T &elem);
+    bool isEmpty();
 };
 
 template<typename T> void Stack<T>::push(T elem) {
@@ -44,6 +45,10 @@ template<typename T> bool Stack<T>::pop(T &elem) {
     if (Top >= 0) Risp = true, elem = Vet[Top--];
     else Risp = false; // stack vuoto
     return Risp;
+}
+
+template<typename T> bool Stack<T>::isEmpty() {
+    return Top == -1;
 }
 
 #endif //ASD_STACK_H
