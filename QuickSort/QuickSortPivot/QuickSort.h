@@ -25,7 +25,7 @@ int QuickSort::Partition(int *a, int left, int right) {            //VERSIONE HO
 
     int pivot = a[right];   //dichiaro l'ultimo elemento come pivot
 
-    while (1) {     //ciclo while infinito fin quando non viene eseguito un break
+    while(1) {     //ciclo while infinito fin quando non viene eseguito un break
         while (a[++i] < pivot);         //fin quando trova elementi minori del pivot
         while (pivot < a[--j])          //fin quando trova alementi maggiori del pivot
              if (j == left)
@@ -46,7 +46,7 @@ void QuickSort::swap(int &A, int &B) {
 }
 
 void QuickSort::quicksort(int *a, int left, int right) {
-    if (right <= 1)
+    if (right <= left)
         return;
     int i = Partition(a, left, right);
     quicksort(a,left, i-1);

@@ -11,17 +11,21 @@ using namespace std;
 
 int main() {
 
-    int *elementi = new int[];
-    for (int i = 0; i < 7; ++i) {
-        cout << "Inserisci elemento " << i << ":  ";
-        cin >> elementi[i];
+    int a[4] = {7,5,4,9};
+
+    cout << "Array prima sort:  " << endl;
+
+    for (auto x : a){
+        cout << x << " ";
     }
 
-    QuickSort::quicksort(elementi, 0, 6);
+    QuickSort::quicksort(a,0,3);
 
-    for (int indice = 0; indice < 7; indice++)
-        cout << "Elemento [" << indice << "] =  " << elementi[indice] << endl;
-    delete [] elementi;
+    cout << "\nArray dopo sort:  " << endl;
+
+    for (auto x : a){
+        cout << x << " ";
+    }
 
     return 0;
 
