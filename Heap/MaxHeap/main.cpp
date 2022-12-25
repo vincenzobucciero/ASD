@@ -21,18 +21,21 @@ using namespace std;
 
 int main()
 {
-    vector<int> tree{10,30,50,60,20};
+    MaxHeap<int> maxTree;
 
-    MaxHeap<int> maxTree = MaxHeap<int>(tree);
+    maxTree.insert(1998);
+    maxTree.insert(1);
+    maxTree.insert(10);
+    maxTree.insert(190);
+    maxTree.insert(2);
+    maxTree.insert(20);
+    maxTree.insert(100);
 
-    maxTree.buildMaxHeapify();
-    /*maxTree.insert(10);
-    maxTree.insert(30);
-    maxTree.insert(50);
-    maxTree.insert(60);
-    maxTree.insert(20);*/
+    maxTree.print();
+    maxTree.printAsciiTree();
 
-    maxTree.printArray();
+    maxTree.heapSort();
+    maxTree.printVector();
     
 
     return 0;
