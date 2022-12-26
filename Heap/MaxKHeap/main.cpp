@@ -15,14 +15,17 @@
 using namespace std;
 
 int main () {
-    srand(1);
-    srand((unsigned)time(0));
+    srand(time(NULL));
 
-    MaxKappa<int> tree(new vector<int>, 4);
+    MaxKappa<int> tree(new vector<int>, 3);
 
-    for (int i = 0; i < 20; i++)
-        tree.insert(rand()%900);
+    for (int i = 0; i < 15; i++) {
+        int num = rand()%100;
+        tree.insert(num);
+    }
+
     tree.printTree();
+        
 
     return 0;
 }

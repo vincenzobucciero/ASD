@@ -90,7 +90,7 @@ void MaxKappa<T>::maxKHeapify(int i) {
 
     // prendo max tra i figli
     for (int j = last; j > first; j--)
-        if (j < HeapSize && this->tree->at(max) < this->tree->at(i))
+        if (j < HeapSize && this->tree->at(max) < this->tree->at(j))
             max = j;
 
     if (max != i) {
@@ -102,7 +102,7 @@ void MaxKappa<T>::maxKHeapify(int i) {
 
 template <typename T>
 void MaxKappa<T>::buildMaxKHeap() {
-    for (int i = HeapSize/2; i >= 0; i++)
+    for (int i = HeapSize/2; i >= 0; i--)
         maxKHeapify(i);
 }
 
@@ -115,14 +115,32 @@ void MaxKappa<T>::swap(T &A, T &B) {
 
 template <typename T>
 void MaxKappa<T>::insert(T nodo) {
+    /*
+    this->tree->push_back(nodo);
+    HeapSize++;
+
+    buildMaxKHeap();
+    */
+
     HeapSize++;
     this->tree->push_back(nodo);
     int i = HeapSize-1;
 
+    /*
+    int parent = i%k == 0 ? i/k-1 : i/k;
+
+    while (i != 0 && this->tree->at(parent) < this->tree->at(i)) {
+        swap(this->tree->at(i), this->tree->at(parent));
+        i = parent;
+    }
+    */
+
+    
     while (i != 0 && this->tree->at(Parent(i)) < this->tree->at(i)) {
         swap(this->tree->at(i), this->tree->at(Parent(i)));
         i = Parent(i);
     }
+    
 }
 
 template <typename T>
