@@ -25,6 +25,7 @@ class MaxKappa {
         int HeapSize;
         int k;
 
+        
         int Parent(int i);
         int Left(int i);
         int Right(int i);
@@ -62,6 +63,7 @@ MaxKappa<T>::~MaxKappa() {
     delete tree;
 }
 
+
 template <typename T>
 int MaxKappa<T>::Parent(int i) {
     return (i-1)/2;
@@ -74,6 +76,7 @@ template <typename T>
 int MaxKappa<T>::Right(int i) {
     return (2*i+2);
 }
+
 
 template <typename T>
 void MaxKappa<T>::maxKHeapify(int i) {
