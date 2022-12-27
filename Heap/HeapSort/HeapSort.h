@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <vector>
+#define vuoto 10
 
 using namespace std;
 
@@ -26,13 +27,16 @@ class HeapSort {
         void maxHeapify(int i);
         void buildMaxHeap();
         void swap(T &A, T &B);
+        void inOrderAscii(int i, int spazio);
     public:
         HeapSort(vector<T> *tree);
+        HeapSort();
         ~HeapSort();
 
         void insert(T nodo);
         void heapsort();
         void printTree();
+        void printAsciiTree();
 };
 
 template <typename T>
@@ -41,6 +45,12 @@ HeapSort<T>::HeapSort(vector<T> *tree) {
     this->HeapSize = tree->size();
 
     buildMaxHeap();
+}
+
+template <typename T>
+HeapSort<T>::HeapSort() {
+    this->tree = new vector<T>;
+    this->HeapSize = 0;
 }
 
 template <typename T>
@@ -106,11 +116,11 @@ void HeapSort<T>::insert(T nodo) {
 
 template <typename T>
 void HeapSort<T>::heapsort() {
-    buildMaxHeap();
-    for(int j = HeapSize-1; j>=0; j--)
+    //buildMaxHeap();
+    for(int j = HeapSize-1; j>0; j--)
         swap(this->tree->at(0), this->tree->at(j));
-        HeapSize-1;
-        maxHeapify(1);
+        HeapSize--;
+        maxHeapify(0);
 }
 
 template <typename T>
@@ -120,5 +130,29 @@ void HeapSort<T>::printTree() {
         cout << this->tree->at(i) << " ";
 }
 
+
+template <typename T>
+void HeapSort<T>::inOrderAscii(int i, int spazio){
+
+    if (i >= HeapSize)
+        return;
+
+    spazio += vuoto;
+
+    inOrderAscii(Right(i),spazio);
+
+    cout << endl;
+    for (int i = vuoto; i < spazio; i++)
+        cout << " ";
+    cout << this->tree->at(i) << endl;
+
+    inOrderAscii(Left(i),spazio);
+}
+
+template <typename T>
+void HeapSort<T>::printAsciiTree(){
+    cout << endl << "***Max Ascii Heap***" << endl;
+    inOrderAscii(0,0);
+}
 
 #endif //HEAPSORT_H

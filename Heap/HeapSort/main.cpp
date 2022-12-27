@@ -15,21 +15,21 @@ using namespace std;
 
 int main () {
     
-    srand(time(NULL));
+    HeapSort<int> tree;
 
-    HeapSort<int> tree (new vector<int>);
+    tree.insert(1998);
+    tree.insert(1);
+    tree.insert(10);
+    tree.insert(190);
+    tree.insert(2);
+    tree.insert(20);
+    tree.insert(100);
 
-    for(int i = 0; i < 15; i++) {
-        int num = rand()%20;
-        tree.insert(num);
-    }
-
-    tree.printTree();
+    tree.printAsciiTree();
 
     tree.heapsort();
 
-    cout << "\n\n DOPO ORDINAMENTO " << endl;
-
     tree.printTree();
+    tree.printAsciiTree();
 
 }
