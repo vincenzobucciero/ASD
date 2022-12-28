@@ -44,10 +44,12 @@ int main() {
     maxQueueTree.increaseKey(2, 20);
 
     maxQueueTree.printTree();
+    maxQueueTree.printAsciiTree();
 
     cout << endl << "Maximum 2: " << maxQueueTree.maximum() << endl;
 
-    maxQueueTree.printAsciiTree();
+    cout << endl << "Extract Max 2: " << maxQueueTree.extractMax() << endl;
+
 
     return 0;
 }
