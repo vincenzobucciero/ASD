@@ -45,6 +45,8 @@ int main() {
 
     maxQueueTree.printTree();
 
+    cout << endl << "Maximum 2: " << maxQueueTree.maximum() << endl;
+
     maxQueueTree.printAsciiTree();
 
     return 0;
