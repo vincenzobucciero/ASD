@@ -70,13 +70,15 @@ void countingSort (int *A, int lengthA){
     delete[] C;
 }
 
+/*
+
 int main(){
 
     int numvar = 8;
     vector<int> vec = {100,20,40,20,12,120,220,240};
     vector<int> vecInvercse = {100,20,40,22,12,120,220,240};
 
-   //AGGIUSTA
+    //AGGIUSTA
 
     for (auto i:vec)
         cout << i << " ";
@@ -85,3 +87,5 @@ int main(){
 
     return 0;
 }
+
+*/
