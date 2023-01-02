@@ -10,36 +10,37 @@ using namespace std;
 
 class CountingSort {
     public:
-        static void countingSort(int array[], int n);
+        static void countingSort(int *arr, int n);
 };
 
-void CountingSort::countingSort(int array[], int n) {
-    int max = array[0];
-    int min = array[0];
+void CountingSort::countingSort(int *arr, int n) {
+    int max = arr[0];
+    int min = arr[0];
 
-    for(int i = 1; i < n; i++) {
-        if(array[i] > max)
-            max = array[i];
-        else if(array[i] < min)
-            min = array[i];
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > max)
+            max = arr[i];
+        else if(arr[i] < min)
+            min = arr[i];
     }
-
     int lengthC = max-min+1;
-    int c[lengthC];
+    int *c = new int[lengthC];
 
-    for(int i = 0; i < lengthC; i++)
+    for(int i = 0; i < lengthC; i++) {
         c[i] = 0;
-    for(int i = 0; i < n; i++)
-        c[array[i]-min]++;
-    for(int i = 1; i < lengthC; i++)
-        c[i] += c[i-1];
-
-    int b[n];
-    for(int i = n-1; i>=0; i--) {
-        b[c[array[i]-min]-1] = array[i];
-        c[array[i]-min]--;
+    }
+    for(int i = 0; i < n; i++) {
+        c[arr[i]-min]++;
     }
 
-    for(int i = 0; i < n; i++)
-        array[i] = b[i];
+    int k = 0;
+    for(int i = 0; i < lengthC; i++) {
+        while(c[i] > 0) {
+            arr[k++] = i+min;
+            c[i]--;
+        }
+    }
+
+    delete [] c;
 }
+
