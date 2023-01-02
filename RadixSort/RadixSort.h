@@ -4,6 +4,21 @@
 
 //IMPLEMENTAZIONE RADIX SORT
 
+/*
+    Il Radix Sort è un algoritmo di ordinamento usato per ordinare
+    record con chiavi multiple. 
+    • Il Radix Sort opera in modo contro intuitivo ordinando prima le
+        cifre meno significative e poi quelle via via più significative
+    • Supponiamo di dover ordinare una sequenza di numeri a 3 cifre
+    • Utilizzando un ordinamento di tipo stabile possiamo procedere
+        ordinando prima per le unità, poi le decine e in ultimo le
+        centinaia
+    • Ad ogni passo la stabilità ci garantisce che le cifre precedenti
+        sono già ordinate
+
+    
+*/
+
 #include <iostream>
 #include <vector>
 
