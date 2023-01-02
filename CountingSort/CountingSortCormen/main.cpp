@@ -12,12 +12,24 @@
 using namespace std;
 
 int main () {
-    int numvar = 8;
-    int a[] = {100,20,40,20,12,120,220,240};
+    int  numvar;
+
+    cout << "Inserisci numero elementi vettore:  ";
+    cin >> numvar;
+
+    int *a = new int[numvar];
+
+    for(int j = 0; j < numvar; j++) {
+        cout << "Elemento [" << j << "]:  " ;
+        cin >> a[j];
+    }
 
     CountingSort::countingSort(a, numvar);
 
-    for(int i = 0; i< numvar; i++)
-        cout << a[i] << " ";
-    cout << endl;
+    cout << "Vettore ordinato:  " << endl;
+    for(int idx = 0; idx < numvar; idx++) {
+        cout << "Elemento [" << idx << "] =  " << a[idx] << endl;
+    }
+
+    return 0;
 }
